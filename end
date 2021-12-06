@@ -1,0 +1,29 @@
+[33mcommit 0d234299256e9c80cd8a5f3b25a5b9c288a7436b[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Nikita <dima.gpom@gmail.com>
+Date:   Mon Dec 6 17:42:09 2021 +0300
+
+    d
+
+[33mcommit 20104b4442a638f4016e88853a3c625b38d00150[m
+Author: Nikita <dima.gpom@gmail.com>
+Date:   Mon Dec 6 17:40:17 2021 +0300
+
+    something
+
+[33mcommit efcaeb84d8ccd02936c619261356ddb6c3f65a60[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mstaticVersion[m[33m)[m
+Author: Nikita <email@example.com>
+Date:   Mon Dec 6 16:55:32 2021 +0300
+
+    Создана главная страница и макеты регистрации и услуг
+
+[33mcommit d3f2bd63ef61873e6a4d50e054b94a8cfc47648c[m
+Author: demin1078 <dima.gpom@gmail.com>
+Date:   Tue Nov 30 03:40:58 2021 +0300
+
+    Добавил шаблон сайта, страницу регистрации, структурировал папку сайта
+
+[33mcommit 4ac3a5a60bcab2cab2ea5cdacaf751ee0c28dc1a[m
+Author: demin1078 <dima.gpom@gmail.com>
+Date:   Mon Nov 29 13:00:54 2021 +0300
+
+    Первая версия основной страницы
