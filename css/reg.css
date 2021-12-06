@@ -2,43 +2,21 @@
     padding: 0px;
     margin:0px;
 }
-
-img{
-    max-width: 100%;
-}
 #flexReg{
-    position: ixed;
     width: 100%;
-    background-color: rgb(83, 83, 202);
+    background-color: rgb(59, 241, 172);
     display: flex;
-    justify-content:space-between;
+    justify-content: end;
     flex-direction: row;
     height: 60px;
 }
 #reg{
-    width: 20%;
+    width: 14%;
     background-color: blanchedalmond; 
 }
 #reg h3{
-    padding-top: 5%;
+    padding-top: 7%;
 }
-#contentMenu ul{
-    list-style: none;
-    display:flex;
-    margin-top: 2%;
-}
-#contentMenu ul li{
-    margin-left: 60px;
-    font-size: 20px;
-    font-weight: bolder;
-}
-#contentMenu ul li a{
-    color:rgb(250, 234, 189);
-    text-decoration: none;   
-}
-
-
-
 #mainWrap{
     display: flex;
     height: 900px;
@@ -56,13 +34,13 @@ img{
 #avatarImg{
     width: 30%;
 }
-#regForm ul{
+ul{
     list-style: none;
 }
-#regForm ul li{
+ul li{
     padding-top: 20px;
 }
-#regForm ul li input{
+ul li input{
     height: 50px;
     width: 100%;
     font-size: 20px;
@@ -95,54 +73,15 @@ img{
     padding-left: 8px;
     padding-top: 2%;
 }
-#registration h1{
+h1{
     padding-left: 25%;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: rgb(61, 153, 61);
+    color: rgb(77, 150, 75);
 }
 .butClick{
     color: rgb(39, 39, 39);
     background-color: rgb(247, 218, 199);
     border:2px solid rgb(252, 238, 222);
     font-weight:300 ;
-}
-
-
-
-
-#footerLine{
-    margin-top: 10px;
-    width: 100%;
-    height: 25px;
-    background-color: black;
-}
-#wrapFoot{
-    height: 120px;
-    background-color: rgb(233, 250, 248);
-    display:flex;
-    justify-content: space-around;
-}
-#footCopy{
-    
-    font-weight: bold;
-    margin-top: 2em;
-    font-size: 20px;
-}
-#footSocial{
-    margin-top: 1em;
-}
-#footSocial li{
-    list-style: none;
-    margin-left: 10px;
-}
-#footSocial li img{
-    padding-right: 10px;
-}
-#footSocial ul{
-    padding-top: 20px;
-    display: flex;
-}
-#footSocial img{
-    width: 40px;
 }

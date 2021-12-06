@@ -1,7 +1,5 @@
 
-
-   
-
+    <?php readfile("patterns/header.php") ?>
     <div id = mainMain>
     <div id = mainWrap>
         <div class="adverCol"></div>
@@ -14,7 +12,6 @@
                                 <li><a href="#">Электронный дневник</a></li>
                                 <li><a href="#">оплата ЖКХ</a></li>
                                 <li><a href="#">оплата штрафов</a></li>
-                              
                                 <li><a href="#">Все услуги</a></li>
                             </ul>
                         </div>
@@ -65,3 +62,4 @@
         <div class="adverCol"></div>
     </div>
     </div>
+    <?php readfile("patterns/footer.php") ?>
