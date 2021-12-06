@@ -1,0 +1,41 @@
+*{
+    padding: 0px;
+    margin:0px;
+}
+body{
+    height: 1300px;
+}
+img{
+    max-width: 100%;
+}
+#flexReg{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(83, 83, 202);
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    height: 60px;
+}
+#reg{
+    width: 20%;
+    background-color: blanchedalmond; 
+}
+#reg h3{
+    padding-top: 5%;
+}
+#contentMenu ul{
+    list-style: none;
+    display:flex;
+    margin-top: 2%;
+}
+#contentMenu ul li{
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#contentMenu ul li a{
+    color:rgb(250, 234, 189);
+    text-decoration: none;   
+}
+

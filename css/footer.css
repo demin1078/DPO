@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin:0;
+}
+#footerLine{
+    margin-top: 10px;
+    width: 100%;
+    height: 25px;
+    background-color: black;
+}
+#wrapFoot{
+    height: 120px;
+    background-color: rgb(233, 250, 248);
+    display:flex;
+    justify-content: space-around;
+}
+#footCopy{
+    
+    font-weight: bold;
+    margin-top: 2em;
+    font-size: 20px;
+}
+#footSocial{
+    margin-top: 1em;
+}
+#footSocial li{
+    list-style: none;
+    margin-left: 10px;
+}
+#footSocial li img{
+    padding-right: 10px;
+}
+#footSocial ul{
+    padding-top: 20px;
+    display: flex;
+}
+#footSocial img{
+    width: 40px;
+}

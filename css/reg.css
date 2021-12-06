@@ -1,0 +1,148 @@
+*{
+    padding: 0px;
+    margin:0px;
+}
+
+img{
+    max-width: 100%;
+}
+#flexReg{
+    position: ixed;
+    width: 100%;
+    background-color: rgb(83, 83, 202);
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    height: 60px;
+}
+#reg{
+    width: 20%;
+    background-color: blanchedalmond; 
+}
+#reg h3{
+    padding-top: 5%;
+}
+#contentMenu ul{
+    list-style: none;
+    display:flex;
+    margin-top: 2%;
+}
+#contentMenu ul li{
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#contentMenu ul li a{
+    color:rgb(250, 234, 189);
+    text-decoration: none;   
+}
+
+
+
+#mainWrap{
+    display: flex;
+    height: 900px;
+}
+.adverCol{
+    width: 15%;
+}
+#mainContent{
+    background-color: rgb(191, 247, 247);
+    width: 70%;
+    height: 100%;
+    padding-left: 40px;
+    display: flex;
+}
+#avatarImg{
+    width: 30%;
+}
+#regForm ul{
+    list-style: none;
+}
+#regForm ul li{
+    padding-top: 20px;
+}
+#regForm ul li input{
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    
+}
+#but{
+    width: 20px;
+    margin-top: 50px;
+    display: inline;
+}
+#registration{
+    width: 50%;
+}
+#warning{
+    margin-top: 20%;
+    height: 25%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+#warning span{
+    font-size:18px;
+}
+#textWarning{
+    width: 50%;
+    background-color: rgb(248, 233, 233);
+    color: rgb(39, 39, 39);
+    border: 2px solid rgb(165, 25, 16);
+    border-radius: 4px;
+    padding-left: 8px;
+    padding-top: 2%;
+}
+#registration h1{
+    padding-left: 25%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(61, 153, 61);
+}
+.butClick{
+    color: rgb(39, 39, 39);
+    background-color: rgb(247, 218, 199);
+    border:2px solid rgb(252, 238, 222);
+    font-weight:300 ;
+}
+
+
+
+
+#footerLine{
+    margin-top: 10px;
+    width: 100%;
+    height: 25px;
+    background-color: black;
+}
+#wrapFoot{
+    height: 120px;
+    background-color: rgb(233, 250, 248);
+    display:flex;
+    justify-content: space-around;
+}
+#footCopy{
+    
+    font-weight: bold;
+    margin-top: 2em;
+    font-size: 20px;
+}
+#footSocial{
+    margin-top: 1em;
+}
+#footSocial li{
+    list-style: none;
+    margin-left: 10px;
+}
+#footSocial li img{
+    padding-right: 10px;
+}
+#footSocial ul{
+    padding-top: 20px;
+    display: flex;
+}
+#footSocial img{
+    width: 40px;
+}

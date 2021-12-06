@@ -1,0 +1,258 @@
+*{
+    padding: 0px;
+    margin:0px;
+}
+body{
+    height: 1300px;
+}
+img{
+    max-width: 100%;
+}
+#flexReg{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(83, 83, 202);
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    height: 60px;
+}
+#reg{
+    width: 15%;
+    background-color: blanchedalmond; 
+}
+#reg h3{
+    padding-top: 5%;
+}
+#contentMenu ul{
+    list-style: none;
+    display:flex;
+    margin-top: 2%;
+}
+#contentMenu ul li{
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#contentMenu ul li a{
+    color:rgb(250, 234, 189);
+    text-decoration: none;   
+}
+#header_search{
+    height: 30px;
+    margin-top: 10px;
+}
+#headerSearchField{
+    height: 37px;
+    width: 200px;
+    border-radius: 10px;
+}
+#header_search button{
+    width: 80px;
+    height: 30px;
+    background-color: rgb(22, 49, 202);
+    font-size: 15px;
+    color: rgb(250, 234, 189);
+    font-weight: 400;
+    border-radius: 3px;
+}
+
+
+body{
+    background-color: rgb(255, 215, 196);
+}
+#mainMain{
+    height: 1300px;
+}
+#mainWrap{
+    display: flex;
+    height: 400px;
+}
+.adverCol{
+    width: 10%;
+}
+#mainContent{
+    background-color: rgb(191, 247, 247);
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.contentBlog{
+    height: 230px;
+    width: 290px;
+    background-color: rgb(250, 235, 208);
+    margin-top: 10%;
+    margin-right: 5%;
+    border: 3px solid rgb(248, 226, 185);
+    border-radius: 10px;
+    box-shadow: 10px 0 15px rgb(63, 63, 63); 
+}
+#firstColumn{
+    margin-left: 10%;
+}
+.contentBlog span{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(255, 153, 0);
+}
+.name{
+    width: 100%;
+    height: 10%;
+    padding-top: 10px;
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+.contentBlog ul{
+    padding-top: 30px;
+    color:rgb(32, 221, 57);
+    font-size: 15px;
+}
+.contentBlog ul li{
+    padding-bottom: 10px;
+}
+li{
+    text-align: left;
+    padding-left: 10px;
+}
+a{
+    text-decoration: none;
+}
+.contentBlog a:hover{
+    font-size: 25px;
+}
+.contentBlog a{
+    font-size: 19px;
+}
+
+#advertisment{
+    display: flex;
+    width: 300px;
+    height: 100px;
+    margin-top: 100px;
+    background-color: darkblue;
+}
+#newsBox{
+    height: 900px;
+    background-color: rgb(177, 224, 252);
+   
+}
+#help{
+    flex-direction: column;
+    width:80%;
+}
+.canukillme{
+    height: 400px;
+    display:flex;
+    margin-top: 20px;
+}
+.imgAdv{
+    background-size: cover;
+    border-radius: 3px;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    width: 40%;
+}
+#firstNews{
+    background-image: url(../img/ice.jpg);
+}
+#secondNews{
+    background-image: url(../img/aplaco.jpg);
+    width: 37%;
+}
+.adverBlock{
+    margin:0% 0 0 0% ;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 10px;
+    text-align: left;
+}
+.adverText{
+  padding-top: 10px;
+  line-height: 20px;
+  color: rgb(105, 33, 11);
+}
+#newsText{
+    padding-left: 36.5%;
+    padding-top: 1%;
+    color: white;
+    background-color: rgb(27, 48, 172);
+}
+#newsFirstBlock{
+    padding-left: 5%;
+}
+#imgWrap{
+    border-bottom: 3px solid black;
+}
+span img{
+    width: 14%;
+    padding-left: 20px;
+}
+.imgDescribe{
+    margin-top: 4%;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30%;
+    height: 20%;
+    border: 3px solid white;
+    background-color: white;
+}
+#imgDescribe2{
+    margin-top: 13%;
+}
+.imgSubImg{
+    width: 25%;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+/* footer */
+*{
+    padding: 0;
+    margin:0;
+}
+#footerLine{
+  
+    width: 100%;
+    height: 25px;
+    background-color: black;
+  
+}
+#wrapFoot{
+    height: 120px;
+    background-color: rgb(233, 250, 248);
+    display:flex;
+    justify-content: space-around;
+}
+#footCopy{
+  
+    font-weight: bold;
+    margin-top: 2em;
+    font-size: 20px;
+}
+#footSocial{
+    margin-top: 1em;
+}
+#footSocial li{
+    list-style: none;
+    margin-left: 10px;
+}
+#footSocial li img{
+    padding-right: 10px;
+}
+#footSocial ul{
+    padding-top: 20px;
+    display: flex;
+}
+#footSocial img{
+    width: 40px;
+}
