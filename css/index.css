@@ -153,6 +153,8 @@ a{
     border-left: 3px solid white;
     border-right: 3px solid white;
     width: 40%;
+    max-width: 100%;
+    
 }
 #firstNews{
     background-image: url(../img/ice.jpg);
@@ -196,7 +198,7 @@ span img{
     margin-left: 10px;
     margin-right: 10px;
     width: 30%;
-    height: 20%;
+    height:fit-content ;
     border: 3px solid white;
     background-color: white;
 }

@@ -1,0 +1,83 @@
+#mainWrap{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+#mainContent{
+    background-color: aliceblue;
+    width: 80%;
+    
+}
+#conteinerSlides{
+    height: 480px;
+    margin-top: 40px;
+   
+}
+.Slide{
+    
+    width: 100%;
+}
+.Slide img{
+    margin-left: 15%;
+    width: 850px;
+    height: 400px;
+    border-radius: 3px;
+    border:1px solid black;
+}
+.imgText{
+    top: 55%;
+    left: 43%;
+    position:absolute;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-shadow: 0px 3px 3px black;
+}
+.prev, .next{
+    top: 30%;
+    position:absolute;
+    width: 35px;
+    height: 60px;
+    padding-top: 14px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+}
+.prev:hover, .next:hover{
+    background-color: rgba(14, 13, 13, 0.849);
+    transition: 0.6s ease;
+}
+.prev{
+    left: 22.5%;
+}
+.next{
+    width: 20px;
+    padding-left: 15px;
+    left: 74.7%;
+}
+
+
+#sendRequest{
+    width: 85%;
+    
+    background-color: rgb(255, 255, 255);
+    margin-left: 7.5%;
+    border: 1px solid rgba(185, 183, 183, 0.534) ;
+}
+#formContent input{
+    width: 30%;
+    height: 50px;
+    margin-bottom: 5%;
+    border: 1px solid rgb(82, 82, 82)
+}
+#formContent{
+    padding-top: 4%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#mainSendText{
+    height: 500px;
+    width: 40%;
+    margin-left: 30%;
+}
