@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/pattern.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+   
 </head>
 <body>
     <div id = "flexReg">
@@ -18,5 +19,5 @@
                 <li><a href = "#">Электронная приёмная</a></li>
             </ul>
         </div>
-        <div id = "reg"><h3 align="center"><a href="reg.html">Регистрация/вход</a></h3></div>
+        <div id = "reg"><h3 align="center"><a href="enter.php">Регистрация/вход</a></h3></div>
     </div>

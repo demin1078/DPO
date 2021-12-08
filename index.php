@@ -1,5 +1,6 @@
 
-    <?php readfile("patterns/header.php") ?>
+    <?php include("patterns/header.php") ?>
+    <link rel="stylesheet" href="css/index.css">
     <div id = mainMain>
     <div id = mainWrap>
         <div class="adverCol"></div>
@@ -17,7 +18,7 @@
                         </div>
                     </div>
                     <div class="contentBlog">
-                        <div class = name id = name_forum ><span>ФОРУМ<img src= "img/vikackaaaaaaaaa.jpg"><hr></span></div>
+                        <div class = name id = name_forum ><span>ФОРУМ<a href="activeUsers.php"><img src= "img/vikackaaaaaaaaa.jpg"></a><hr></span></div>
                         <div id = forum_top>
                             <ul>
                                 
@@ -62,4 +63,4 @@
         <div class="adverCol"></div>
     </div>
     </div>
-    <?php readfile("patterns/footer.php") ?>
+    <?php include("patterns/footer.php") ?>

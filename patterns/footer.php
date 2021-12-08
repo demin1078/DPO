@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/footer.css">
+
 <div id = footerLine></div>
 <div id  = wrapFoot>
     <div id = footCopy>&copy;Все права на сайт защищены</div>
