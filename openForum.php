@@ -14,8 +14,14 @@
         while($value = mysqli_fetch_assoc($res)){
           
             if($value['name'] == $_SESSION['user']['name']){
+                $id_message = $value['id_message'];
                 echo "<li class = 'forumMessageMy'>". $value['text_message'] .
-                " <h5>".$value['name']."</h5></li>";
+                " <h5>".$value['name']."</h5>
+                 <h6 class = Edit message><a href = 'post_edit_message.php?id_mes=$id_message'>редактировать</a></h6>
+                 <h6 class = removeMessage><a href = 'post_remove_message.php?id_mes=$id_message'>удалить</a></h6>              
+                </li>"
+                
+                ;
             }
             else{
             echo "<li class = 'forumMessage'>". $value['text_message'] ." <h5>".$value['name']."</h5></li>";
