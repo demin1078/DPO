@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,17 +8,48 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-   
+    
 </head>
 <body>
-    <div id = "flexReg">
+    
+    <div id = "flexReg" class = >
         <div id = contentMenu>
             <ul>
-                <li><a href = "#">Главная страница</a></li>
-                <li><a href = "#">Услуги</a></li>
-                <li><a href = "#">Форум</a></li>
-                <li><a href = "#">Электронная приёмная</a></li>
+                <li><a href = "index.php">Главная страница</a></li>
+                <li><a href = "services.php">Услуги</a></li>
+                <li><a href = "forums.php">Форум</a></li>
+                <li><a href = "reception.php">Электронная приёмная</a></li>
             </ul>
         </div>
-        <div id = "reg"><h3 align="center"><a href="enter.php">Регистрация/вход</a></h3></div>
+
+        <!-- Searching  -->
+        <form id="header_search">
+            <input id= headerSearchField type="search" placeholder="Поиск" aria-label="Search">
+            <button  type="submit">Найти</button>
+          </form>
+        <form action="log_out.php" method=post>
+            <input type="submit" value = "log out">
+        </form>
+         
+          
+        <div id = "reg"><a href="enter.php"><h3 align="center"><a href="enter.php" id = regA></a></h3></div>
+        <?php 
+       
+        $userName = $_SESSION['user']['name'];
+      
+      
+        if($_SESSION['user']){ ?> 
+            <script> document.getElementById("regA").innerHTML = "<?php echo $userName ?>" 
+                 document.getElementById("regA").href = "index.php" 
+            </script> <?php
+           
+        }
+        else{
+            echo '<script> 
+                document.getElementById("regA").innerHTML = "Регистрация/вход" 
+               
+            </script> ';
+        }
+ 
+?>
     </div>

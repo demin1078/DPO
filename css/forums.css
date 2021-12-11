@@ -1,0 +1,43 @@
+.deleteHeaderMistake{
+    height: 60px;
+}
+
+#forumsWrap{
+    display: flex;
+}
+#forums{
+    width: 80%;
+    margin-left: 10%;
+    background-color: aquamarine;
+    min-height: 600px;
+}
+#forumsList ul{
+    list-style: none;
+}
+#forumsList li{
+    border-bottom: 3px solid rgba(44, 44, 44, 0.705);
+    margin-top: 3%;
+    background-color:rgba(165, 196, 185, 0.527) ;
+    height: 50px;
+    padding-left: 1%;
+}
+#forumsList li::first-letter{
+    text-transform: uppercase;
+}
+#forumsList li h5{
+    color: gray;
+    padding-left: 1%;
+    display: inline;
+}
+#forumsList li  img{
+    display: inline-block;
+    height: 20px;
+    width: 20px; ;
+    float: left;
+}
+.numbMess{
+    display: inline;
+}
+#create_new_forum{
+    padding-top: 50px;
+}

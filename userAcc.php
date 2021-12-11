@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <?php 
+
+    <?php session_start();
     include("core/db.php");
     $email = $_POST['email'];
     $password = $_POST['password'];
@@ -16,14 +8,34 @@
     $sql = mysqli_query($connection, "SELECT COUNT(emails) AS con FROM users WHERE emails = '$email' and passw = '$password'");
     $res = mysqli_fetch_assoc($sql);
     if ($res['con']){ 
-        $sql = mysqli_query($connection, "SELECT name,last_name FROM users WHERE emails = '$email' and passw = '$password'");
+        $sql = mysqli_query($connection, "SELECT * FROM users WHERE emails = '$email' and passw = '$password'");
         $res = mysqli_fetch_assoc($sql);
+        
+     
 
-        echo "<h1>Имя". $res['name']. "</h1>";
-        echo "<h1>Фамилия ". $res['last_name']. "</h1>";
-        echo "<h1>--------</h1>";
+       // include ("patterns/header.php");
+  
+     
     
-        ?>
+        $_SESSION['user'] = [
+            "id" => $res['id_user'],
+            "name" => $res['name'],
+            "last_name" => $res['last_name'],
+            "patronymic" => $res["patronymic"],
+            "birtday" => $res["birtday"],
+            "снилс" => $res["СНИЛС"],
+            "passport" => $res["passport"],
+            "work" => $res["work"],
+            "education" => $res["education"],
+            "emails" => $res["emails"],
+            "passw" => $res["passw"],
+        ];
+
+       
+   
+        header('location:http://test/index.php');
+         ?>
+
         
     <?php
     }

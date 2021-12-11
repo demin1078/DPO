@@ -1,0 +1,22 @@
+#regField{
+    height: 200px;
+    width: 500px;
+    margin-top:200px;
+    margin-left: 500px; 
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 15px black;
+}
+#regField form{
+    display: flex;
+    flex-direction: column;
+   
+}
+#regField form input{
+    width: 50%;
+    margin-top: 3%;
+    margin-left: 25%;
+}
+#registration{
+    margin-top: 20px;
+    margin-left: 27%;
+}

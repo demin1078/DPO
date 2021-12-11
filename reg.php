@@ -1,4 +1,6 @@
-<?php include("patterns/header.php") ?>
+<?php
+ session_start();
+ include("patterns/header.php") ?>
 
 <?php  include("core/db.php");
    
@@ -13,16 +15,16 @@
                 <h1>Личный кабинет</h1>
                 <form action="post.php" id = regForm method="POST">
                     <ul>
-                        <li><input type="text" placeholder="Введитие имя" name = name required></li>
-                        <li><input type="text" placeholder="Введитие фамилию" name = secondName required></li>
-                        <li><input type="text" placeholder="Введитие отчество" name = nameName></li>
-                        <li><input type = "password" placeholder="Придумайте пароль" name = password required></li>
-                        <li><input type="email"placeholder="Введитие email" name = email required></li>
+                        <li><input type="text" placeholder="Введитие имя" name = name required pattern="[а-яА-Я]{1,60}"></li>
+                        <li><input type="text" placeholder="Введитие фамилию" name = secondName required pattern="[а-яА-Я]{1,60}"></li>
+                        <li><input type="text" placeholder="Введитие отчество" name = nameName pattern="[а-яА-Я]{1,60}"></li>
+                        <li><input type = "password" placeholder="Придумайте пароль" name = password required pattern="[^а-яА-Я]{6,60}"></li>
+                        <li><input type="email"placeholder="Введитие email" name = email required pattern="[^а-яА-Я]{6,60}"></li>
                         <li><input type="date" placeholder="Введитие дату рождения" name = birthday required></li>
-                        <li><input type="text" placeholder="Введитие ваше образование"></li>
-                        <li><input type="text" placeholder="Введитие СНИЛС" ></li>
-                        <li><input type="text" placeholder="Введитие паспортные данные"></li>
-                        <li><input type="text" placeholder="Введитие название организации, где вы работаете"></li>
+                        <li><input type="text" placeholder="Введитие ваше образование" name = education></li>
+                        <li><input type="text" placeholder="Введитие СНИЛС" name = snils pattern="\d{11}" required></li>
+                        <li><input type="text" placeholder="Введитие паспортные данные" pattern="\d{10}" name = passport></li>
+                        <li><input type="text" placeholder="Введитие название организации, где вы работаете" name = work></li>
                     
                         <li><input type="file" class =""></li>
                         <li><div id = but> <input type="submit"  class ="butClick" value="Отправить данные"></div></li>
