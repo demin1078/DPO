@@ -1,4 +1,68 @@
+*{
+    padding: 0px;
+    margin:0px;
+}
+body{
+    height: 1300px;
+}
+img{
+    max-width: 100%;
+}
+#flexReg{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(83, 83, 202);
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    height: 60px;
+}
+#reg{
+    width: 15%;
+    background-color: blanchedalmond; 
+}
+#reg h3{
+    padding-top: 5%;
+}
+#contentMenu ul{
+    list-style: none;
+    display:flex;
+    margin-top: 2%;
+}
+#contentMenu ul li{
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#contentMenu ul li a{
+    color:rgb(250, 234, 189);
+    text-decoration: none;   
+}
+#header_search{
+    height: 30px;
+    margin-top: 10px;
+}
+#headerSearchField{
+    height: 37px;
+    width: 200px;
+    border-radius: 10px;
+}
+#header_search button{
+    width: 80px;
+    height: 30px;
+    background-color: rgb(22, 49, 202);
+    font-size: 15px;
+    color: rgb(250, 234, 189);
+    font-weight: 400;
+    border-radius: 3px;
+}
 
+
+
+
+body{
+    background-color: rgb(255, 215, 196);
+}
 #mainMain{
     height: 1300px;
 }
@@ -6,7 +70,6 @@
     display: flex;
     height: 400px;
 }
-
 .adverCol{
     width: 10%;
 }
@@ -29,7 +92,10 @@
 #firstColumn{
     margin-left: 10%;
 }
-.contentBlog span a{
+.contentBlog span{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(255, 153, 0);
 }
 .name{
     width: 100%;
@@ -59,15 +125,9 @@ a{
     font-size: 25px;
 }
 .contentBlog a{
-  
-    font-size: 25px;
-    font-weight: bold;
-    color: rgb(255, 153, 0);
-}
-.contentBlog ul li a{
     font-size: 19px;
-    color: rgb(61, 61, 170);
 }
+
 #advertisment{
     display: flex;
     width: 300px;
@@ -95,15 +155,15 @@ a{
     border-left: 3px solid white;
     border-right: 3px solid white;
     width: 40%;
+    max-width: 100%;
+    
 }
 #firstNews{
     background-image: url(../img/ice.jpg);
-    
 }
 #secondNews{
     background-image: url(../img/aplaco.jpg);
     width: 37%;
-  
 }
 .adverBlock{
     margin:0% 0 0 0% ;
@@ -140,7 +200,7 @@ span img{
     margin-left: 10px;
     margin-right: 10px;
     width: 30%;
-    height:fit-content;
+    height:fit-content ;
     border: 3px solid white;
     background-color: white;
 }
@@ -159,4 +219,3 @@ span img{
 
 
 
-/* footer */
