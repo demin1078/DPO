@@ -22,9 +22,9 @@
                 <?php
               
                 while($nameOfService = mysqli_fetch_assoc($res)) {?>
-                <li <?php 
+                <li class = nameServiceLi1 <?php 
                     if($nameOfService['service_name'] == $serv){
-                    echo 'style = background-color:green';}
+                    echo 'style = background-color:blanchedalmond   ';}
                 ?>><a href = "?serv=<?php print $nameOfService['service_name']?>">
                 <div class = nameServiceLi><?php echo $nameOfService['service_name']; ?></div></a></li>
                 <?php } ?>
@@ -35,6 +35,7 @@
                 <h4 align=center><?php echo $serv ?></h4>
             </div>
             <div id = describeChoiseService>
+
                 <?php 
                     echo $currentSerivce['description'];
                     echo $currentSerivce['id_service'];
@@ -44,7 +45,7 @@
             <div id="yieldData">
                 <form action="post_serv_req.php" method="post">
                     <ul>              
-                        <li>Ваше имя:<input type="text" placeholder="Иван" required name = name value="<?php echo $_SESSION['user']['name'] ?>"></li>
+                        <li >Ваше имя:<input type="text" placeholder="Иван" required name = name value="<?php echo $_SESSION['user']['name'] ?>"></li>
                         <li>Ваша фамилия:<input type="text" placeholder="Иванов" required name = last_name value = "<?php echo $_SESSION['user']['last_name'] ?>"></li>
                         <li>Ваше отчество(если есть):<input type="text" placeholder="Иванович" name = name_name value = " <?php echo $_SESSION['user']['patronymic'] ?>"> </li>
                         <?php   
@@ -57,6 +58,7 @@
                 
             </div>
             <div id = serviceButton>
+                <img src="https://sun9-77.userapi.com/impf/wYo3uBN1ZuuT1bRw5c394MbcUIkek3NLHgIcLA/giv8OAQaM8I.jpg?size=1080x1070&quality=96&sign=e1dbece2b7dc8389dba6315cdcfd6db4&type=album" alt="">
                 <input type="hidden" value = "<?php echo $currentSerivce['id_service'] ?>" name="id_service">
                 <input type="submit" value = "подать заявление" >
             </div>
