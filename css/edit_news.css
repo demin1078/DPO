@@ -1,0 +1,22 @@
+
+#wrap form{
+    display: flex;
+}
+#wrap form div{
+    height: 300px;
+    width: 300px;
+   
+}
+#wrap img,h5{
+    width: 280px;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.card{
+    display: block;
+}
+#description textarea{
+    resize: vertical;
+    width: 200px;
+}

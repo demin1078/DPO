@@ -20,6 +20,6 @@
         mysqli_query($connection,"INSERT INTO services(service_name, description, require_doc) VALUES('$service_name','$descrtiption','$res_docs') ");
         
         echo "<script> alert('Успешно добавлена услуга') </script>";
-        echo '<script type="text/javascript"> window.location.href = "http://test/addService.php" </script>';
+        echo '<script type="text/javascript"> window.location.href = "http://test/services.php?serv=%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D0%BA%20%D0%B2%D1%80%D0%B0%D1%87%D1%83" </script>';
     }
 ?>

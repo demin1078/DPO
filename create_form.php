@@ -1,6 +1,11 @@
 <?php session_start();
 include("core/db.php");
 
+    if (!$_SESSION['user']){
+        echo "<script> alert('Войдите в аккаунт, чтобы создавать новые обсуждения')</script>";
+        echo "<script> window.history.back() </script>";
+    }
+
 ?>
 <form action="post_new_form.php" method = "POST">
 <ul>

@@ -18,7 +18,12 @@
     <div id = mainService>
         <div id = nameService>
             <ul>
-                <li  class = nameServiceLi><a href="addService.php"> Добавить услугу </a></li>
+                <?php  
+              
+                if ($_SESSION['user']['is_admin'] == 1){
+                    echo' <li  class = nameServiceLi id = nameServiceLiAdd><a href="addService.php"> Добавить услугу </a></li>';
+                }
+                ?>
                 <?php
               
                 while($nameOfService = mysqli_fetch_assoc($res)) {?>
@@ -45,13 +50,13 @@
             <div id="yieldData">
                 <form action="post_serv_req.php" method="post">
                     <ul>              
-                        <li >Ваше имя:<input type="text" placeholder="Иван" required name = name value="<?php echo $_SESSION['user']['name'] ?>"></li>
-                        <li>Ваша фамилия:<input type="text" placeholder="Иванов" required name = last_name value = "<?php echo $_SESSION['user']['last_name'] ?>"></li>
-                        <li>Ваше отчество(если есть):<input type="text" placeholder="Иванович" name = name_name value = " <?php echo $_SESSION['user']['patronymic'] ?>"> </li>
+                        <li ><input type="text" placeholder="Имя" required name = name value="<?php echo $_SESSION['user']['name'] ?>"></li>
+                        <li><input type="text" placeholder="Фамилия" required name = last_name value = "<?php echo $_SESSION['user']['last_name'] ?>"></li>
+                        <li><input type="text" placeholder="Отчество" name = name_name value = "<?php echo $_SESSION['user']['patronymic'] ?>"> </li>
                         <?php   
                            $array = explode(',',$currentSerivce['require_doc']);    
                            foreach ($array as $el){                       
-                               echo "<li>Ваш ". $el ."<input type='text' required name = ". $el ." value = '". $_SESSION['user'][$el] ."' required></li>";
+                               echo "<li> <input type='text' required name = ". $el ." value = '". $_SESSION['user'][$el] ."' required placeholder = '$el'></li>";
                            }
                             ?>                      
                     </ul>

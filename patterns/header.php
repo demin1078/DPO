@@ -16,17 +16,16 @@
         <div id = contentMenu>
             <ul>
                 <li><a href = "index.php">Главная страница</a></li>
-                <li><a href = "services.php">Услуги</a></li>
+                <li><a href = "http://test/services.php?serv=%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D0%BA%20%D0%B2%D1%80%D0%B0%D1%87%D1%83">Услуги</a></li>
                 <li><a href = "forums.php">Форум</a></li>
-                <li><a href = "reception.php">Электронная приёмная</a></li>
             </ul>
         </div>
 
         <!-- Searching  -->
-        <form id="header_search">
+        <!-- <form id="header_search">
             <input id= headerSearchField type="search" placeholder="Поиск" aria-label="Search">
             <button  type="submit">Найти</button>
-          </form>
+          </form> -->
         <form action="log_out.php" method=post>
             <input type="submit" value = "log out">
         </form>
@@ -40,7 +39,7 @@
       
         if($_SESSION['user']){ ?> 
             <script> document.getElementById("regA").innerHTML = "<?php echo $userName ?>" 
-                 document.getElementById("regA").href = "index.php" 
+                 document.getElementById("regA").href = "personCabinet.php" 
             </script> <?php
            
         }

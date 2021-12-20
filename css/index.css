@@ -1,67 +1,10 @@
-*{
-    padding: 0px;
-    margin:0px;
-}
-body{
-    height: 1300px;
-}
-img{
-    max-width: 100%;
-}
-#flexReg{
-    position: fixed;
-    width: 100%;
-    background-color: rgb(83, 83, 202);
-    display: flex;
-    justify-content:space-between;
-    flex-direction: row;
-    height: 60px;
-}
-#reg{
-    width: 15%;
-    background-color: blanchedalmond; 
-}
-#reg h3{
-    padding-top: 5%;
-}
-#contentMenu ul{
-    list-style: none;
-    display:flex;
-    margin-top: 2%;
-}
-#contentMenu ul li{
-    margin-left: 60px;
-    font-size: 20px;
-    font-weight: bolder;
-}
-#contentMenu ul li a{
-    color:rgb(250, 234, 189);
-    text-decoration: none;   
-}
-#header_search{
-    height: 30px;
-    margin-top: 10px;
-}
-#headerSearchField{
-    height: 37px;
-    width: 200px;
-    border-radius: 10px;
-}
-#header_search button{
-    width: 80px;
-    height: 30px;
-    background-color: rgb(22, 49, 202);
-    font-size: 15px;
-    color: rgb(250, 234, 189);
-    font-weight: 400;
-    border-radius: 3px;
-}
+
 
 
 
 
 body{
-    background-color: rgb(255, 215, 196);
+    background-color: rgba(255, 248, 245, 0.849);
 }
 #mainMain{
     height: 1300px;
@@ -78,6 +21,7 @@ body{
     width: 100%;
     height: 100%;
     display: flex;
+    justify-content: space-around;
 }
 .contentBlog{
     height: 230px;
@@ -145,7 +89,7 @@ a{
     width:80%;
 }
 .canukillme{
-    height: 400px;
+    height: fit-content;
     display:flex;
     margin-top: 20px;
 }
@@ -177,6 +121,8 @@ a{
 .adverText{
   padding-top: 10px;
   line-height: 20px;
+  width: 100%;
+
   color: rgb(105, 33, 11);
 }
 #newsText{
@@ -200,9 +146,14 @@ span img{
     margin-left: 10px;
     margin-right: 10px;
     width: 30%;
+    min-height: 150px;
     height:fit-content ;
     border: 3px solid white;
     background-color: white;
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: center;
 }
 #imgDescribe2{
     margin-top: 13%;

@@ -2,24 +2,33 @@
     height: 60px;
 }
 
+#forums h1{
+    font-size: 50px;
+    color: rgb(67, 125, 180);
+    margin-left: 40px;
+}
 #forumsWrap{
     display: flex;
+}
+#forums a{
+    text-decoration: none;
 }
 #forums{
     width: 80%;
     margin-left: 10%;
-    background-color: aquamarine;
+    background-color: rgb(191, 247, 247);
     min-height: 600px;
 }
 #forumsList ul{
     list-style: none;
 }
 #forumsList li{
-    border-bottom: 3px solid rgba(44, 44, 44, 0.705);
-    margin-top: 3%;
-    background-color:rgba(165, 196, 185, 0.527) ;
+   
+    margin-top: 1%;
+    background-color:rgb(255, 251, 241) ;
     height: 50px;
     padding-left: 1%;
+    color:rgb(52, 168, 245);
 }
 #forumsList li::first-letter{
     text-transform: uppercase;

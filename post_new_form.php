@@ -12,5 +12,6 @@ else{
     mysqli_query($connection,"INSERT INTO message(text_message,id_user) VALUES ('$textMessage','$userId')");
     $idMessage =mysqli_fetch_assoc(mysqli_query($connection, "SELECT MAX(id_message) as mx FROM message"))['mx'];
     mysqli_query($connection, "INSERT INTO forums(id_message,name_forum) VALUES ('$idMessage','$nameForum') ");
+    echo '<script type="text/javascript"> window.location.href = "http://test/forums.php" </script>';
 }
 ?>

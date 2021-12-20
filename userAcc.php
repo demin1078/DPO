@@ -29,11 +29,12 @@
             "education" => $res["education"],
             "emails" => $res["emails"],
             "passw" => $res["passw"],
+            "is_admin" => $res["is_admin"]
         ];
 
-       
-   
-        header('location:http://test/index.php');
+        echo '<script type="text/javascript"> window.location.href = "index.php" </script>';
+        
+        // header('location:http://test/index.php');
          ?>
 
         

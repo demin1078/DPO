@@ -5,7 +5,7 @@
     <div class="deleteHeaderMistake"></div>
     <div id = forumsWrap>
         <div id = forums>
-            <h1 align = "center">Форумы</h1>
+            <h1>Форумы</h1>
             <div id="forumsList">
                 <ul>
                     <?php 
