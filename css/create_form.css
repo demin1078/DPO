@@ -1,0 +1,33 @@
+#form{
+    margin-left: 30%;
+    margin-top: 8%;
+    width: 500px;
+    height: 320px;
+    padding-top: 3%;
+    padding-left: 50px;
+    margin-bottom: 8%;
+
+    border: 5px solid rgb(255, 151, 151)  ;
+    font-size: 30px;
+    box-shadow: 0px 0px 3px;
+    background-color: rgb(193, 225, 243);
+}
+#wrap input{
+    width: 200px;
+    height: 50px;
+    margin-left: 10px;
+}
+#wrap ul{
+    list-style: none;
+}
+#wrap li{
+    margin-bottom: 30px;
+}
+#send{
+   background-color: rgb(252, 191, 186);
+   border: 2px solid rgb(201, 121, 121);
+   border-radius: 3px;
+}
+#name{
+    color: rgb(36, 36, 36);
+}

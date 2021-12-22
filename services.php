@@ -4,6 +4,8 @@
     include("core/db.php");
     $res = mysqli_query($connection, "SELECT service_name FROM services");
     $serv = $_GET['serv'];
+    $search = $_GET['search'];
+    $resSearch = mysqli_query($connection, "SELECT service_name FROM services WHERE service_name LIKE '%$search%'");
     $currentSerivce = mysqli_query($connection, "SELECT * FROM services WHERE service_name = '$serv'");
     $currentSerivce = mysqli_fetch_assoc($currentSerivce);
 
@@ -23,16 +25,34 @@
                 if ($_SESSION['user']['is_admin'] == 1){
                     echo' <li  class = nameServiceLi id = nameServiceLiAdd><a href="addService.php"> Добавить услугу </a></li>';
                 }
+                else{
+                    echo "<form action = 'http://test/services.php' method = GET>
+                    <li class = nameServiceLi > <input type = 'search' placeholder = 'Что вы ищите?' id = search name = search> <input type = 'submit' id = 'find' value = 'найти'>  </li> </form>";
+                    
+                }
                 ?>
                 <?php
-              
+                if (!$search){
                 while($nameOfService = mysqli_fetch_assoc($res)) {?>
                 <li class = nameServiceLi1 <?php 
                     if($nameOfService['service_name'] == $serv){
                     echo 'style = background-color:blanchedalmond   ';}
                 ?>><a href = "?serv=<?php print $nameOfService['service_name']?>">
                 <div class = nameServiceLi><?php echo $nameOfService['service_name']; ?></div></a></li>
-                <?php } ?>
+                <?php }} 
+                else{
+                    while($nameOfService = mysqli_fetch_assoc($resSearch)) {?>
+                        <li class = nameServiceLi1 <?php 
+                            if($nameOfService['service_name'] == $serv){
+                            echo 'style = background-color:blanchedalmond   ';}
+                        ?>><a href = "?serv=<?php print $nameOfService['service_name'].'&search='.$search ?>">
+                        <div class = nameServiceLi><?php echo $nameOfService['service_name']; ?></div></a></li>
+                                <?php }}
+
+                ?>
+
+
+
             </ul>
         </div>
         <div id = describeSerivce>

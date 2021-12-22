@@ -24,7 +24,7 @@
 }
 #forumsList li{
    
-    margin-top: 1%;
+    margin-top: 2%;
     background-color:rgb(255, 251, 241) ;
     height: 50px;
     padding-left: 1%;
@@ -44,9 +44,37 @@
     width: 20px; ;
     float: left;
 }
+#forumsList h2:hover{
+    text-decoration:underline;
+}
 .numbMess{
     display: inline;
 }
+.numbMess img{
+    margin-left: 95%;
+}
 #create_new_forum{
-    padding-top: 50px;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+#create_new_forum input{
+    height: 50px;
+    width: 320px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: blanchedalmond;
+    border-radius: 15px;
+    color: rgba(48, 48, 48, 0.808);
+    border: 0px;
+}
+#create_new_forum input:hover{
+    font-size: 21px;
+    color: rgb(33, 14, 143);
+    font-weight: bold;
+    cursor: pointer;
+
+}
+#forumsList li{
+    box-shadow: 0px 3px 3px;
 }

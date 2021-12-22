@@ -17,9 +17,14 @@
                         <div class = name id = name_service ><span><a href = "http://test/services.php?serv=%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D0%BA%20%D0%B2%D1%80%D0%B0%D1%87%D1%83">УСЛУГИ  </a><img src="img/compass.jpg" alt=""><hr></span></div>
                         <div id= service_top>
                             <ul>
-                                <li><a href="#">Электронный дневник</a></li>
-                                <li><a href="#">оплата ЖКХ</a></li>
-                                <li><a href="#">оплата штрафов</a></li>
+                                <?php 
+                                    $services = mysqli_query($connection, "SELECT service_name FROM services ORDER BY numb_views DESC LIMIT 3");
+                                    while ($service = mysqli_fetch_assoc($services)['service_name']){
+                                        echo '<li><a href="http://test/services.php?serv='.$service.'">'.$service.'</a></li>';
+                                    }
+
+                                ?>
+
                                 <li><a href="http://test/services.php?serv=%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D0%BA%20%D0%B2%D1%80%D0%B0%D1%87%D1%83">Все услуги</a></li>
                             </ul>
                         </div>
@@ -28,9 +33,16 @@
                         <div class = name id = name_forum ><span><a href = "http://test/forums.php">ФОРУМ</a><a href="activeUsers.php"><img src= "img/vikackaaaaaaaaa.jpg"></a><hr></span></div>
                         <div id = forum_top>
                             <ul>
-                                
-                                <li><a href="patterns/header.php">Что делать, если дед не встаёт со стула 20 лет и хочет сесть ещё на 6?</a></li>
-                                <li><a href="#">Помогите, в кваритру л..</a></li>
+                            <?php 
+                                    $forums = mysqli_query($connection, "SELECT COUNT(id_message) AS con,id_forum,name_forum FROM forums GROUP BY id_forum ORDER BY con  DESC LIMIT 3");
+                                    while ($forum = mysqli_fetch_assoc($forums)){
+                                        $id_forum = $forum['id_forum'];
+                                        $name_forum = $forum['name_forum'];
+                                        echo '<li><a href="http://test/openForum.php?id='.$name_forum.'">'.$name_forum.'</a></li>';
+                                    }
+                                ?>
+
+                        
                                 <li><a href="#">Все форумы</a></li>
                             </ul>
                         </div>

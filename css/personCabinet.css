@@ -1,31 +1,55 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
 #Wrap{
     display: flex;
     justify-content: center;
 }
 #mainWrap{
     width: 60%;
-    background-color: aquamarine;
+    background-color: rgb(183, 217, 255);
 }
 #naming{
     margin-top: 30px;
     margin-left: 80px;
     margin-bottom: 40px;
 }
+#naming h2{
+    font-size: 40px;
+}
 #main_content{
     display: flex;
     min-height: 500px;
     margin-bottom: 30px;
 }
+#name{
+    display: inline-block;
+}
+#greeting{
+    display: flex;
+    font-size: 22px;
+}
+
+#kill{
+    list-style: none;
+}
+li::first-letter{
+    text-transform: uppercase;
+}
+
 #user_info{
     width: 30%;
     margin-left: 5%;
 }
 #require_service{
     width: 50%;
-    background-color: grey;
+    background-color: rgb(211, 234, 255);
+    box-shadow: 0px 0px 30px;
     margin-left: 10%;
     margin-top: 50px;
-}
+} 
 #user_info ul{
     margin:50px 0 0 15px;
     list-style: none;
@@ -34,24 +58,51 @@
     text-indent: 8px;
     height: 20px;
     margin-bottom: 10px;
-    border-bottom: 1px solid black;
+    height: fit-content;
+}
+#info{
+    font-size: 18px;
+}
+#info li{
+    height: fit-content;
 }
 #require_service ul{
     list-style: none;
     margin-left: 40px;
 }
 #require_service ul li{
-    display: flex;
+    display:flex;
     width: 93%;
     margin-top:20px;
     height: 80px;
-    background-color: rgba(93, 95, 94, 0.726);
+    background-color:rgb(255, 240, 221);
+    border:3px solid rgb(240, 180, 203);
+}
+#require_service ul li :first-letter{
+    text-transform: uppercase;
 }
 #require_service ul li input{
     height: 30px;
-    margin-top: 15px;
-    margin-left:120px;
+    margin-top: 20px;
 }
 #require_service ul li span{
+    display: inline;
+}
+.ebl{
+    margin-top: 5px;
+    width: 50%;
+}
+.ebl2{
     margin-top: 20px;
+    margin-left: 4px;
+}
+.delete{
+    background-color: rgb(230, 75, 75);
+    border: 3px solid rgb(255, 207, 207);
+    border-radius: 5px;
+    color: white;
+    width: 100px;
+    margin-left: 30px;
+    height: 80px;
+    display: inline;
 }

@@ -26,9 +26,7 @@
             <input id= headerSearchField type="search" placeholder="Поиск" aria-label="Search">
             <button  type="submit">Найти</button>
           </form> -->
-        <form action="log_out.php" method=post>
-            <input type="submit" value = "log out">
-        </form>
+        
          
           
         <div id = "reg"><a href="enter.php"><h3 align="center"><a href="enter.php" id = regA></a></h3></div>

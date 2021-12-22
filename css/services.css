@@ -42,10 +42,8 @@
     background-color: rgb(252, 240, 223);
     width: 73%;
     border-radius: 30px;
-  
-
-
 }
+
 #nameService ul{
     list-style: none;
     padding-left: 0;
@@ -163,7 +161,15 @@ ul{
     margin-left: 30px;
 }
 
-
-
+#find {
+    width: 70px;
+}
+#search{
+    width: 180px;
+    border-radius: 5px;
+}
+.nameServiceLi :first-child{
+    height: 40px;
+}
 
 
